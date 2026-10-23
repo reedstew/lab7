@@ -1,0 +1,19 @@
+{
+  "tasks": {
+    "dev": "deno run --allow-all --watch src/server.ts",
+    "dev:http": "deno run --allow-all --watch src/server.ts --http",
+    "start": "deno run --allow-all src/server.ts",
+    "start:http": "deno run --allow-all src/server.ts --http",
+    "test": "deno test --allow-all"
+  },
+  "imports": {
+    "@modelcontextprotocol/sdk": "npm:@modelcontextprotocol/sdk@~1.28.0",
+    "@types/node": "npm:@types/node@^26.6.4",
+    "express": "npm:express@^5.2.1",
+    "@types/express": "npm:@types/express@^5.0.6",
+    "zod": "npm:zod@^4.6.5"
+  },
+  "compilerOptions": {
+    "strict": true
+  }
+}

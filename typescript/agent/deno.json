@@ -1,0 +1,20 @@
+{
+  "tasks": {
+    "start": "deno run --allow-all src/cli.ts",
+    "dev": "deno run --allow-all --watch src/cli.ts",
+    "ui": "deno run --allow-all src/ui/server.ts",
+    "ui:dev": "deno run --allow-all --watch src/ui/server.ts",
+    "benchmark": "deno run --allow-all src/benchmark/benchmark.ts"
+  },
+  "compilerOptions": {
+    "strict": true
+  },
+  "imports": {
+    "@ai-sdk/google": "npm:@ai-sdk/google@~2.0.101",
+    "ai": "npm:ai@~5.0.272",
+    "ai-json-fixer": "npm:ai-json-fixer@^0.2.0",
+    "zod": "npm:zod@^4.6.5",
+    "dotenv": "npm:dotenv@^16.6.1",
+    "@modelcontextprotocol/sdk": "npm:@modelcontextprotocol/sdk@~1.28.0"
+  }
+}
